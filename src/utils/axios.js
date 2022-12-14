@@ -18,7 +18,7 @@ service.interceptors.request.use(
   config => {
     const token = getToken()
     if (token) {
-      config.headers.common['Authorization'] = token
+      config.headers.common['slug'] = token
     }
     return config
   },

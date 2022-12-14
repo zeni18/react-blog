@@ -138,6 +138,7 @@ export function isExternal(path) {
 
 // 获取 token
 export function getToken() {
+  return 'cailei'
   let token = ''
   const userInfo = get('userInfo')
 

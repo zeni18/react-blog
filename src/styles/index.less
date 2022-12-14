@@ -1,5 +1,18 @@
 @import './markdown.less';
 
+@primaryColor: 0px;
+@secondColor: rgba(0,0,0,.5);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  word-break: break-word;
+  outline: none;
+}
+
 .svg-icon {
   width: 1em;
   height: 1em;
@@ -9,18 +22,37 @@
 }
 
 body {
-  position: relative;
-  font-family: 'Chinese Quote', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
-    'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
-  line-height: 2;
-  color: #555;
+  font-size: 14px;
+  background-color: #fafafc;
+  color: #191919;
+  font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+  line-height: normal;
 }
 
 ol,
 ul {
   list-style: none;
   padding: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ /* Chrome, Firefox, Opera, Safari 10.1+ */
+ ::placeholder { 
+  font-size: 12px !important;
+}
+
+/* Internet Explorer 10-11 */
+:-ms-input-placeholder { 
+  font-size: 12px !important;
+}
+
+/* Microsoft Edge */
+::-ms-input-placeholder { 
+  font-size: 12px !important;
 }
 
 .async-com-loading {
@@ -66,4 +98,10 @@ ul {
       top: -0.06em;
     }
   }
+}
+
+.over-h {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden
 }

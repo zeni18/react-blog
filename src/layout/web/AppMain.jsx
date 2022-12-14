@@ -14,9 +14,6 @@ function AppMain(props) {
 
   return (
     <div className='app-main'>
-      {(ipadScreen || iphoneScreen) && ANNOUNCEMENT.enable && (
-        <Alert message={ANNOUNCEMENT.content} type='info' style={{ marginTop: iphoneScreen ? 20 : 0, marginBottom: ipadScreen ? 20 : 0 }} />
-      )}
       {props.children}
     </div>
   )

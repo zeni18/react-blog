@@ -25,7 +25,7 @@ const HeaderLeft = props => {
   }
 
   function onSubmit() {
-    history.push(`/home?page=1&keyword=${keyword}`)
+    history.push(`/?page=1&keyword=${keyword}`)
     setKeyword('')
   }
 
@@ -60,7 +60,7 @@ const HeaderLeft = props => {
   return (
     <div className='header-left'>
       <SvgIcon type='iconblog' style={{ color: '#055796', width: 16, height: 16, transform: 'translateY(-2px)' }} />
-      <span className='blog-name' onClick={e => history.push('/home')} >{HEADER_BLOG_NAME}</span>
+      <span className='blog-name' onClick={e => history.push('/')} >{HEADER_BLOG_NAME}</span>
       <Dropdown
         overlayClassName='header-dropdown'
         trigger={['click']}

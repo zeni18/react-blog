@@ -7,7 +7,7 @@ export default {
   name: 'home',
   component: Layout,
   childRoutes: [
-    { path: '/home', component: lazy(() => import('@/views/web/home')) },
+    { path: '/', component: lazy(() => import('@/views/web/home')) },
     { path: 'article/:id', component: lazy(() => import('@/views/web/article')) },
     { path: 'article/share/:uuid', component: lazy(() => import('@/views/web/article')) },
     { path: 'archives', component: lazy(() => import('@/views/web/archives')) },

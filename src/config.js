@@ -5,13 +5,16 @@ import SvgIcon from '@/components/SvgIcon'
 import Href from '@/components/Href'
 import MyInfo from '@/views/web/about/MyInfo'
 import {GithubFill} from 'utils/antdIcon'
+import { WindowsFilled } from '@ant-design/icons'
 // API_BASE_URL
-export const SERVER_URL = 'http://www.panyunyi.cn'
+export const SERVER_URL = 'https://lab.jianshou.online'
 // export const SERVER_URL = 'http://127.0.0.1'
-export const API_BASE_URL = SERVER_URL + ':6060'
+export const API_BASE_URL = SERVER_URL + '/creator'
 // export const API_BASE_URL = 'http://127.0.0.1:6060'
 // project config
 export const HEADER_BLOG_NAME = '菜园子' // header title 显示的名字
+
+window.slug = 'cailei'
 
 // === sidebar
 export const SIDEBAR = {

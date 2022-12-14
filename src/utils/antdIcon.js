@@ -59,3 +59,8 @@ export { default as LineOutline} from '@ant-design/icons/lib/icons/LineChartOutl
 export { default as MonitorOutline} from '@ant-design/icons/lib/icons/MonitorOutlined'
 export { default as PlusCircleFill} from '@ant-design/icons/lib/icons/PlusCircleFilled'
 export { default as PlusCircleOutline} from '@ant-design/icons/lib/icons/PlusCircleOutlined'
+export { default as MoreOutlined} from '@ant-design/icons/lib/icons/MoreOutlined'
+export { default as MessageFilled} from '@ant-design/icons/lib/icons/MessageFilled'
+export { default as CheckOutlined} from '@ant-design/icons/lib/icons/CheckOutlined'
+export { default as ShareAltOutlined} from '@ant-design/icons/lib/icons/ShareAltOutlined'
+
